@@ -1,0 +1,492 @@
+body {
+	font-family: Helvetica, Verdana, Sans-serif;
+	margin: 0;
+	overflow-x: hidden;
+}
+/*navigation bar*/
+nav {
+	background-color: #AB3A54;
+}
+nav ul { /*list of links*/
+    justify-content: center; /*centralize links*/
+    display: flex; /*links in a row*/
+    padding-bottom: 20px;
+}
+nav li { /*each link*/
+	list-style-type: none; /*no bullets on links*/
+	padding: 10px 4% 0 0;
+}
+nav li a {
+	color: white;
+	text-decoration: none;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+nav a.active {
+	text-decoration: underline;
+}
+nav img { /*logo*/
+	height: 17%;
+    margin: auto;
+    display: flex; /*centralize logo*/
+}
+.drop { 
+	display: none; /*not showing until hover on*/
+  	position: absolute; /*appear in list*/
+  	margin-left: -1.5%;
+  	background-color: #AB3A54;
+  	z-index: 1; /*do not cover links*/
+}
+.drop a {
+	float: none;
+	display: block; /*appear on list*/
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.dropmenu:hover .drop { 
+	display: block; /*links appear on hover*/
+}
+section h1 {
+	width: 280px;
+	border-bottom: solid; /*underline*/
+	margin: 50px 0 30px 5%;
+	color: #AB3A54;
+}
+section {
+	float: left;
+	width: 89%;
+	margin: 0 0 50px 10%;
+	font-family: Georgia, Times New Roman, Sans-serif;
+}
+#who p {
+	width: 45%;
+	float: left;
+	margin-right: 3%;
+}
+#who iframe {
+	width: 40%;
+	height: 255px;
+}
+#services {
+	margin: 0;
+	padding-bottom: 90px;
+	width: 100%;
+	background-color: #f7ebee;
+}
+#services h1 {
+	margin: 50px 0 30px 14%;
+	color: #AB3A54;
+}
+.service { /*each service*/
+	background-color: white;
+	text-align: center;
+	float: left;
+	margin: 0 0 50px 2.4%;
+	padding: 0 1% 10px;
+	width: 20%;
+	line-height: 1.5;
+}
+.service h4 {
+	font-family: Helvetica, Verdana, Sans-serif;
+	color: #AB3A54;
+	font-style: italic;
+}
+.service img {
+	width: 100%;
+}
+.button {
+	width: 100%;
+	justify-content: center; /*centralize button*/
+	display: flex;
+}
+.button button a { /*link inside button*/
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
+.button button { /*styling button*/
+	outline: none;
+	width: 250px;
+	padding: 10px;
+	background-color: #AB3A54;
+	border: none;
+}
+#gallery {
+	margin: 0;
+	padding-bottom: 40px;
+	width: 100%;
+}
+#gallery h1 {
+	margin: 50px 0 30px 14%;
+	color: #AB3A54;
+}
+.image img {
+	width: 110%;
+	height: 200px;
+	border: solid;
+	border-color: #f7ebee;
+}
+.image {
+	margin: 0 0 70px 3.5%;
+	float: left;
+	width: 20%;
+}
+.fade { 
+	text-align: center;
+	width: 22.5%;
+	background-color: #f7ebee; /*transparent background*/
+	margin-top: -0.2%;
+	position: absolute;
+	color: #AB3A54;
+}
+footer {
+	background-color: #AB3A54;
+	width: 100%;
+	height: 100px;
+	display: inline-block; /*on bottom*/
+	text-align: center;
+	padding-top: 10px;
+}
+footer button {
+	padding: 10px;
+	background-color: #f7ebee; 
+	outline: none;
+	border: none;
+	border-radius: 3px;
+}
+footer button:hover {
+	border-right: solid;
+	border-left: solid;
+	border-width: 2px;
+}
+footer button a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+footer p {
+	font-size: 15px;
+	color: white;
+}
+footer p img {
+	width: 25px;
+	height: 25px;
+}
+#about .col {
+	width: 31%;
+	float: left;
+} 
+#about .col h4 {
+	width: 200px;
+	border-bottom: solid; /*underline*/
+	color: #AB3A54;
+	font-size: 20px;
+} 
+#about .col p {
+	padding: 20px;
+	margin-right: 10%;
+	margin-top: -28px;
+	box-shadow: 1px 1px 3px black;
+}
+#newsletter {
+	background-color: #f7ebee;
+	margin: 0px;
+	width: 100%;
+	padding-bottom: 40px;
+}
+#newsletter h1 {
+	margin: 50px 0 30px 14%;
+}
+#newsletter p {
+	margin: 50px 0 30px 10%;
+}
+#newsletter button {
+	width: 25%;
+	padding: 10px;
+}
+#newsletter button:hover {
+	border: solid;
+	border-width: thin;
+}
+#calculate {
+	margin-left: 5%; /*align section*/
+}
+#calculate h1 {
+	margin: 50px 0 30px 10.5%;
+}
+#calculate p {
+	font-family: Helvetica, Verdana, Sans-serif;
+}
+form {
+	text-align: center;
+}
+form label {
+	font-family: Helvetica, Verdana, Sans-serif;
+	color: #AB3A54;
+	font-weight: bold;
+}
+form input, textarea {
+	background-color: #f7ebee;
+	padding: 7px;
+	margin: 30px 3.5% 0 0;
+	width: 150px;
+	outline: none;
+	border: none;
+	border-bottom: solid;
+	border-bottom-width: thin;
+	text-align: center; /*user input in center*/
+}
+form button {
+	padding: 5px;
+	width: 170px;
+	display: block; /*appear above*/
+	margin: 3% 43% 0;
+	padding: 10px;
+	outline: none;
+	border: none;
+	border-radius: 2px;
+	background-color: #AB3A54;
+	color: white;
+	font-size: 15px;
+	cursor: pointer; /*pointer on hover*/
+}
+.result {
+	font-family: Helvetica, Verdana, Sans-serif;
+	padding-top: 30px;
+	text-align: center; 
+	color: #AB3A54;
+	font-weight: bold;
+}
+.contact {
+	text-align: center;
+	background-color: #f7ebee;
+	margin: 0;
+	padding: 0 0 50px 0;
+	width: 100%; /*caver all background*/
+}
+.contact iframe { /*map*/
+	width: 50%;
+	height: 200px;
+}
+.col {
+	margin-top: 2%;
+	width: 50%;
+	float: left;
+}
+.col form {
+	text-align: left; 
+	margin: 10px 30%;
+}
+.col form input, textarea {
+	margin: 5px 0 15px -10%;
+	width: 300px;
+	text-align:left; /*user input in center*/
+}
+.col button {
+	margin: 10px 20%;
+}
+.col span {
+	font-family: Helvetica, Verdana, Sans-serif;
+	display: block;
+	color: #AB3A54;
+	font-weight: bold;
+	padding: 10px 10%;
+}
+.col span a {
+	color: black;
+	font-style: italic;
+}
+.transparent {
+	width: 10%;
+	margin-left: 25%;
+	padding: 10px 20%;
+	background-color: #f7ebee70; /*transparent background*/
+}
+.transparent input {
+	text-align: left;
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 250px;
+	margin-left: -55px;
+}
+.transparent label {
+	display: flex; /*appear on center*/
+	color: black;
+	margin-bottom: -25px;
+	margin-left: 35%;
+}
+.transparent button {
+	margin: 12px -8% 0;
+}
+
+/*RESPONSIVE*/
+/*tablet view*/
+@media (max-width: 1080px) and (min-width: 768px) {
+	#who p{
+		width: 90%;
+	}
+	#who iframe {
+		width: 90%;
+		height: 300px;
+	}
+	.service { /*each service*/
+		margin: 0 0 40px 5.5%;
+		width: 40%;
+	}
+	.image {
+		margin: 0 0 70px 6%;
+		width: 40%;
+	}
+	.image img {
+		width: 100%;
+		height: 40%;
+	}
+	.clear {
+		clear: both;
+	}
+	.fade { 
+		width: 40.6%;
+	}
+	#about .col {
+		width: 80%;
+		margin-left: 5%;
+	}
+	form input {
+		width: 250px;
+		margin: 15px 0;
+	}
+	form label{
+		margin: 1% 0 -1% 40%;
+		display: flex; /*appear on center*/
+	}
+	form button {
+		margin: 25px 30% 0;
+		display: inline; /*appear on center*/
+	}
+	.col form {
+		margin-left: 10%;
+	}
+	.col form label {
+		margin: 0 0 0px 0; 
+	}
+	.transparent {
+		width: 40%;
+		margin-left: 10%;
+	}
+	.transparent input {
+		margin-bottom: 10px;
+		margin-left: 8px;
+	}
+	.transparent label {
+		display: flex; /*appear on center*/
+		color: black;
+		margin-bottom: -12px;
+	}
+
+
+}
+/*mobile view*/
+@media (max-width: 768px) {
+	nav {
+		height: 100px;
+	}
+	nav ul {
+		display: block;
+
+	}
+	nav ul li {
+		float: left;
+		margin-left: 5%;
+		margin-top: 0.5%;
+	}
+	nav img {
+		width: 80px;
+		height: auto;
+		float: left;
+		margin-left: 5%;
+		margin-top: 10px;
+	}
+	#who p{
+		width: 90%;
+	}
+	#who iframe {
+		width: 90%;
+		height: 300px;
+	}
+	.service { /*each service*/
+		margin: 0 0 40px 5.5%;
+		width: 40%;
+	}
+	.clear {
+		clear: both;
+	}
+	.image {
+		margin: 0 0 90px 10%;
+		width: 80%;
+	}
+	.image img {
+		width: 100%;
+		height: 50%;
+	}
+	.fade { 
+		width: 81.3%;
+	}
+	#about .col {
+		width: 51%;
+		float: none;
+	}
+	#about .col p {
+		margin-left: 0;
+	}
+	#newsletter button {
+		width: 80%;
+	}
+	form input {
+		width: 250px;
+		margin: 15px 0;
+	}
+	form label{
+		margin: 1% 0 -1% 34%;
+		display: flex; /*appear on center*/
+	}
+	form button {
+		margin: 25px 30% 0;
+		display: inline; /*appear on center*/
+	}
+	.col {
+		float: none;
+		margin-left: -5%;
+	}
+	.col form {
+		margin: 50px 40%;
+	}
+	.col form label {
+		margin: 0 0 0px 0%; 
+	}
+	.col button {
+		margin: 10px 0%;
+		display: inline; /*appear on center*/
+	}
+	.contact iframe { /*map*/
+		width: 70%;
+		height: 200px;
+	}
+	.col p {
+		margin-left: 20%;
+		width: 180%;
+	}
+	.transparent {
+		width: 40%;
+		margin-left: 10%;
+	}
+	.transparent input {
+		margin-bottom: 10px;
+		margin-left: -25px;
+	}
+	.transparent label {
+		display: flex; /*appear on center*/
+		color: black;
+		margin-bottom: -10px;
+	}
+}

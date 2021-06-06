@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>Era - Διοργάνωση Συνεδριών</title>
+		<!--favicon-->
+		<link rel="shortcut icon" href="images/logo.png"/>
+		<!--external css-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!--responsive design-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--utf-8 encoded-->
+		<meta charset="UTF-8">
+		<!--icons-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--external js-->
+		<script src="cost.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<!--navigation bar-->
+		<nav>
+		<img src="images/logo.png">
+		<ul>
+			<li>
+				<!--Home page sections-->
+				<div class="dropmenu">
+					<a href="interface1.html">
+						Αρχική
+						<!--down arrow-->
+						<i class="fa fa-angle-down"></i>
+					</a>
+					<div class="drop">
+						<a href="interface1.html#who">Ποιοι είμαστε?</a>
+						<a href="interface1.html#services">Οι Yπηρεσίες μας</a>
+						<a href="interface1.html#gallery">Gallery</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<!--Company sections-->
+				<div class="dropmenu"> 
+					<a href="interface2.html">
+						Η Εταιρεία μας
+						<!--down arrow-->
+						<i class="fa fa-angle-down"></i>
+					</a>
+					<div class="drop">
+						<a href="interface2.html#about">Σχετικά με εμάς</a>
+						<a href="interface2.html#newsletter">Εγγραφή στο Newsletter</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<a href="interface3.html" class="active">Υπολογισμός Κόστους Παροχής Υπηρεσιών</a>
+			</li>
+			<li>
+				<a href="interface4.html">Επικοινωνία</a>
+			</li>
+			<li>
+				<a href="interface5.html">Newsletter</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!--calculate cost-->
+	<section id="calculate">
+		<h1>ΚΟΣΤΟΣ</h1>
+		<p>
+			Με την παρακάτω φόρμα έχετε την δυνατότητα να υπολογίσετε το κόστος του συνεδρίου σας με την ERA και να οργανώσετε τα events σας. Συμπληρώστε το πλήθος των συμμετεχόντων, το πλήθος προσωπικού που θα χρεαστείτε και την διάρκεια του συνεδρίου σας.
+		</p>
+		<form>
+			<label>Συμμετέχοντες:</label>
+			<input type="number" name="people" placeholder="Εισάγετε πλήθος">
+			<label>Προσωπικό:</label>
+			<input type="number" name="staff" placeholder="Εισάγετε πλήθος">
+			<label>Διάρκεια (σε ημέρες):</label>
+			<input type="number" name="days" placeholder="Εισάγετε μέρες">
+			<button type="button" onclick="Calculate()">Υπολογισμός</button>
+		</form>
+		<p class="result" id="show">Κόστος συνεδρίου:<span > - </span></p>
+	</section>
+
+	<footer>
+		<button>
+			<a href="interface6.php">Εμφάνιση Χρηστών Newsletter</a>
+		</button>
+		<hr>
+		<p><img src="images/logo.png">ERA LTD, 2020 &copy;</p>
+	</footer>
+	</body>
+</html>

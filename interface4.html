@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<title>Era - Διοργάνωση Συνεδριών</title>
+		<!--favicon-->
+		<link rel="shortcut icon" href="images/logo.png"/>
+		<!--external css-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!--responsive design-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--utf-8 encoded-->
+		<meta charset="UTF-8">
+		<!--icons-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--external js-->
+		<script src="cost.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<!--navigation bar-->
+		<nav>
+		<img src="images/logo.png">
+		<ul>
+			<li>
+				<!--Home page sections-->
+				<div class="dropmenu">
+					<a href="interface1.html">
+						Αρχική
+						<!--down arrow-->
+						<i class="fa fa-angle-down"></i>
+					</a>
+					<div class="drop">
+						<a href="interface1.html#who">Ποιοι είμαστε?</a>
+						<a href="interface1.html#services">Οι Yπηρεσίες μας</a>
+						<a href="interface1.html#gallery">Gallery</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<!--Company sections-->
+				<div class="dropmenu"> 
+					<a href="interface2.html">
+						Η Εταιρεία μας
+						<!--down arrow-->
+						<i class="fa fa-angle-down"></i>
+					</a>
+					<div class="drop">
+						<a href="interface2.html#about">Σχετικά με εμάς</a>
+						<a href="interface2.html#newsletter">Εγγραφή στο Newsletter</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<a href="interface3.html">Υπολογισμός Κόστους Παροχής Υπηρεσιών</a>
+			</li>
+			<li>
+				<a href="interface4.html" class="active">Επικοινωνία</a>
+			</li>
+			<li>
+				<a href="interface5.html">Newsletter</a>
+			</li>
+		</ul>
+	</nav>
+
+		<!--contact-->
+	<section>
+		<h1 class="title">ΕΠΙΚΟΙΝΩΝΙΑ</h1>
+		<div class="col">
+			<form method="POST" action="addMessage.php">
+				<label name="name">Όνομα</label>
+				<input type="text" name="name" placeholder="Name Surname" autocomplete="off" required>
+				<label name="email">Email</label>
+				<input type="email" name="email" placeholder="Example@mail.com" autocomplete="off" required>
+				<label name="subject">Θέμα</label>
+				<input type="text" name="subject" placeholder="Subject" autocomplete="off" required>
+				<label name="message">Μήνυμα</label>
+				<textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
+				<button onclick="requiredContact()">Αποστολή</button>
+			</form>
+		</div>
+		<!--contact info-->
+		<div class="col">
+				<p>
+					<span>Διεύθυνση: 
+					Ασκληπιού 17, Αθήνα 106 80</span>
+					
+					<span>Tηλέφωνο: <a href="tel:+302109890000"> 21 0363 4944</a></span>
+					
+					<span>Email: <a href="mailto:info@dhlexpress.gr">info@era.gr</a></span>
+				</p>
+		</div>
+	</section>
+
+	<!--Map-->
+	<section class="contact">
+		<h3>Βρείτε μας</h3>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12579.113762570454!2d23.7355918!3d37.9822996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa8e63ea01af20bce!2sERA%20Ltd!5e0!3m2!1sel!2sgr!4v1622621873010!5m2!1sel!2sgr"></iframe>
+	</section>
+
+	<!--footer-->
+	<footer>
+		<button>
+			<a href="interface6.php">Εμφάνιση Χρηστών Newsletter</a>
+		</button>
+		<hr>
+		<p><img src="images/logo.png">ERA LTD, 2020 &copy;</p>
+	</footer>
+	</body>
+</html>
