@@ -44,7 +44,7 @@ Page με φόρμα επικοινωνίας, στοιχεία επικοινω
 ### interface5.html
 Page με φόρμα εγγραφής στο newsletter.
 
-### intterface6.php
+### interface6.php
 Page με πίκανα όπου περιέχονται οι χρήστες που είναι εγγεγραμμένοι στο newsletter.
 
 ### style.css
