@@ -1,7 +1,7 @@
 # My_Event_Website
 Πανεπιστημιακή εργασία εξαμήνου στο μάθημα Φορητά και Πληροφοριακά Συστήματα. Παρουσιάζεται η ιστοσελίδα μίας εταιρείας διοργάνωσης συνεδρίων. Η ιστοσελίδα είναι σχεδιασμένη με HTML, CSS, JavaScript, PHP και MySQL. 
 
-*[Το αρχείο Report.pdf αποτελεί την τεχνική αναφορά του project.]()https://github.com/MaryKroustali/My_Event_Website/Report.pdf*
+*[Το αρχείο Report.pdf αποτελεί την τεχνική αναφορά του project.](https://github.com/MaryKroustali/My_Event_Website/Report.pdf)*
 
 ## Περιεχόμενα
 ### images
